@@ -13,7 +13,7 @@
 		C1327D0B2C773DA000302E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1327D0A2C773DA000302E49 /* Preview Assets.xcassets */; };
 		C1327D122C77460700302E49 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1327D112C77460700302E49 /* GameView.swift */; };
 		C1327D142C775A1300302E49 /* GameCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1327D132C775A1300302E49 /* GameCellView.swift */; };
-		C1327D1B2C7771F300302E49 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1327D1A2C7771F300302E49 /* Generator.swift */; };
+		C1327D1B2C7771F300302E49 /* GeneratorCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1327D1A2C7771F300302E49 /* GeneratorCharacters.swift */; };
 		C1327D1D2C7778DB00302E49 /* TimeManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1327D1C2C7778DB00302E49 /* TimeManger.swift */; };
 		C1327D202C777D0A00302E49 /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1327D1F2C777D0A00302E49 /* alert.mp3 */; };
 /* End PBXBuildFile section */
@@ -26,7 +26,7 @@
 		C1327D0A2C773DA000302E49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1327D112C77460700302E49 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		C1327D132C775A1300302E49 /* GameCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCellView.swift; sourceTree = "<group>"; };
-		C1327D1A2C7771F300302E49 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		C1327D1A2C7771F300302E49 /* GeneratorCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorCharacters.swift; sourceTree = "<group>"; };
 		C1327D1C2C7778DB00302E49 /* TimeManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManger.swift; sourceTree = "<group>"; };
 		C1327D1F2C777D0A00302E49 /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alert.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +116,7 @@
 		C1327D192C7771A700302E49 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C1327D1A2C7771F300302E49 /* Generator.swift */,
+				C1327D1A2C7771F300302E49 /* GeneratorCharacters.swift */,
 				C1327D1C2C7778DB00302E49 /* TimeManger.swift */,
 			);
 			path = Managers;
@@ -206,7 +206,7 @@
 				C1327D142C775A1300302E49 /* GameCellView.swift in Sources */,
 				C1327D042C773D9F00302E49 /* CubesApp.swift in Sources */,
 				C1327D1D2C7778DB00302E49 /* TimeManger.swift in Sources */,
-				C1327D1B2C7771F300302E49 /* Generator.swift in Sources */,
+				C1327D1B2C7771F300302E49 /* GeneratorCharacters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

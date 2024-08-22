@@ -12,7 +12,7 @@ struct GameCellView: View {
     let character: String
     var body: some View {
         LazyVStack {
-            Text("\(character)")
+            Text("\(character.uppercased())")
                 .font(.largeTitle)
                 .foregroundStyle(.white)
                 .fontWeight(.bold)
@@ -20,6 +20,7 @@ struct GameCellView: View {
         .frame(width: 100, height: 100)
         .background(Color(.systemPink))
         .cornerRadius(8)
+        .shadow(color: .black, radius: 15)
     }
 }
 

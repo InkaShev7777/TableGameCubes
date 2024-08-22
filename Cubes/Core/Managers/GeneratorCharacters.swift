@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Generator: ObservableObject {
+class GeneratorCharacters: ObservableObject {
     private let russianAlphabet = Array("абвгдеёжзийклмнопрстуфхцчшщэюя")
     
     private var randomLetters: [Character] = []
@@ -15,13 +15,13 @@ class Generator: ObservableObject {
     func generateRandomRussianLetters() -> [Character] {
         randomLetters = []
         for _ in 1...8 {
-                if let randomLetter = russianAlphabet.randomElement() {
-                    randomLetters.append(randomLetter)
-                }
+            if let randomLetter = russianAlphabet.randomElement() {
+                randomLetters.append(randomLetter)
             }
+        }
         
         randomLetters.append(" ")
-
-            return randomLetters
+        
+        return randomLetters
     }
 }

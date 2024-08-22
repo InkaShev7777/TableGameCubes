@@ -15,6 +15,7 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundStyle(.white)
+                    .shadow(color: .white ,radius: 20)
                 
                 NavigationLink(destination: GameView(listCharacters: ["a"])) {
                     Text("Start")
@@ -24,6 +25,7 @@ struct ContentView: View {
                         .foregroundStyle(.white)
                         .background(Color(.systemBlue))
                         .cornerRadius(8)
+                        .shadow(color: Color(.systemBlue), radius: 3)
                 }
             }
             .padding()
