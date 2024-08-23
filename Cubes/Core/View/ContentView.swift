@@ -13,9 +13,9 @@ struct ContentView: View {
             VStack(alignment: .center, spacing: 30) {
                 Text("Cubes Game")
                     .font(.largeTitle)
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
                     .foregroundStyle(.white)
-                    .shadow(color: .white ,radius: 20)
+                    .shadow(color: .white ,radius: 25)
                 
                 NavigationLink(destination: GameView(listCharacters: ["a"])) {
                     Text("Start")
@@ -31,7 +31,7 @@ struct ContentView: View {
             .padding()
             .background {
                 Image("background-black")
-        }
+            }
         }
     }
 }

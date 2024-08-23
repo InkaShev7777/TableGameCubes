@@ -13,6 +13,8 @@ struct GameView: View {
     
     @State var listCharacters: [Character]
     
+    @Environment(\.dismiss) var dismiss
+    
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -21,7 +23,6 @@ struct GameView: View {
     
     var body: some View {
         VStack {
-            
             // grid of characters(cubes)
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(0 ... listCharacters.count-1, id: \.self) { index in
@@ -40,7 +41,7 @@ struct GameView: View {
             
             Spacer()
             
-            // regenerat button 
+            // regenerat button
             Button {
                 listCharacters = generator.generateRandomRussianLetters()
                 timeManager.startTimer()
@@ -52,6 +53,16 @@ struct GameView: View {
                     .foregroundStyle(.white)
                     .background(Color(.systemBlue))
                     .cornerRadius(8)
+            }
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Image(systemName: "chevron.left")
+                    .imageScale(.large)
+                    .onTapGesture {
+                        dismiss()
+                    }
             }
         }
         .onAppear {
