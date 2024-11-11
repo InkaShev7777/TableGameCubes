@@ -10,6 +10,8 @@ import SwiftUI
 struct GameCellView: View {
     
     let character: String
+    let selectedColor: Color
+    
     var body: some View {
         LazyVStack {
             Text("\(character.uppercased())")
@@ -18,12 +20,12 @@ struct GameCellView: View {
                 .fontWeight(.bold)
         }
         .frame(width: 100, height: 100)
-        .background(Color(.systemPink))
+        .background(selectedColor)
         .cornerRadius(8)
         .shadow(color: .black, radius: 15)
     }
 }
 
 #Preview {
-    GameCellView(character: "a")
+    GameCellView(character: "a", selectedColor: Color.red)
 }

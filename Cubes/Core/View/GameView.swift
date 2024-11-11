@@ -26,7 +26,7 @@ struct GameView: View {
             // grid of characters(cubes)
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(0 ... listCharacters.count-1, id: \.self) { index in
-                    GameCellView(character: "\(listCharacters[index])")
+                    GameCellView(character: "\(listCharacters[index])", selectedColor: GameViewViewModel.shared.selectedColor)
                         .padding()
                 }
             }
@@ -60,9 +60,18 @@ struct GameView: View {
             ToolbarItem(placement: .navigationBarLeading) {
                 Image(systemName: "chevron.left")
                     .imageScale(.large)
+                    .foregroundStyle(Color.white)
                     .onTapGesture {
                         dismiss()
                     }
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(destination: SettingsView()) {
+                    Image(systemName: "gear")
+                        .imageScale(.large)
+                        .foregroundStyle(Color.white)
+                }
             }
         }
         .onAppear {
@@ -75,6 +84,6 @@ struct GameView: View {
     }
 }
 
-#Preview {
-    GameView(listCharacters: ["a"])
-}
+//#Preview {
+//    GameView(listCharacters: ["a"])
+//}
